@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Disappearing Circles</title>
+  <style type="text/css">
+  
+    
+    </style>
+</head>
+<body>
+  
+    <p>Guess a number</p>
+    <input type="text" id="inputnumber">
+    <button id="guess">Guess
+    </button>
+  
+  
+  
+
+  <script type="text/javascript">
+  document.getElementById("guess").onclick=function()
+  {
+    var randomnumber=(Math.floor(Math.random()*5));
+    
+    if(document.getElementById("inputnumber").value==randomnumber){
+      alert("You Guessed it right");
+    }
+    else{
+      alert("Guess again the number was"+randomnumber);
+    }
+    
+  }
+  
+  
+  
+  </script>
+  
+  </body>
+  
+  
+  
+</html>
